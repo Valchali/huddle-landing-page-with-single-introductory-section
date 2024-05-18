@@ -1,0 +1,11 @@
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+     /* background-position: top 0, bottom 0; */
+    background-repeat: repeat;
+    background-color: hsl(257, 40%, 49%) ;
+
+    
+   
+
+}
