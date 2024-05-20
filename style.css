@@ -1,11 +1,25 @@
 body{
     background-image: url(images/bg-desktop.svg);
     background-size: cover;
-     /* background-position: top 0, bottom 0; */
     background-repeat: repeat;
     background-color: hsl(257, 40%, 49%) ;
+}
 
-    
-   
+.grid-container {
+    display:flex;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+    padding-left: 50px;
+}
 
+.socials{
+    display:flex;
+    /* place-self: flex-end flex-end; */
+    width: 30px;
+    height: 30px;
+    /* background-color: white; */
+}
+.socials img {
+    filter: brightness(0) invert(1);
 }
