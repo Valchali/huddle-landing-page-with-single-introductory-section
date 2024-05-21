@@ -3,23 +3,40 @@ body{
     background-size: cover;
     background-repeat: repeat;
     background-color: hsl(257, 40%, 49%) ;
+    /* align-items: center; */
 }
 
 .grid-container {
     display:flex;
     width: 100%;
     gap: 50px;
-    align-items: center;
-    padding-left: 50px;
+    /* align-items: center; */
+    justify-content: center;
+    /* padding-left: 50px; */
+    margin-left: 50px;
 }
 
 .socials{
     display:flex;
-    /* place-self: flex-end flex-end; */
     width: 30px;
     height: 30px;
-    /* background-color: white; */
+    margin-top: 150px;
 }
 .socials img {
     filter: brightness(0) invert(1);
+}
+
+.grid-container h1{
+    color: white;
+}
+
+.Register{
+     background-color: white;
+     width: 120px;
+     height: 40px;
+    margin: 50px;
+    text-align: center;
+    color:hsl(257, 40%, 49%);
+    margin-top: 15px;
+    padding: 10px 0;
 }
