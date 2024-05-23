@@ -9,7 +9,7 @@ body{
 .grid-container {
     display:flex;
     width: 100%;
-    gap: 70px;
+    gap: 60px;
     /* align-items: center; */
     justify-content: center;
     /* padding-left: 50px; */
@@ -17,42 +17,39 @@ body{
     margin-top: 1rem;
     /* padding: 20,0; */
 }
- .Register .Reg{
-    color:hsl(257, 40%, 49%) ;
-} 
+
+.grid-container h1{
+    color: white;
+    font-family: Open sans-serif;
+}
 
 
-
-.Register {
-    /* Default background color */
-    background-color: white; /* or any default color you prefer */
-    /* Transition for smooth effect */
-    transition: background-color 0.3s ease;
-    /* Set cursor style */
+.Register button {
+    /* Your styles here */
+    background-color: white; /* White background */
+    border: none;
+    color: hsl(257, 40%, 49%); /* Text color */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 67px;
+    width: 180px;
 }
+.Register button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
 
-.Register:hover {
-    /* Background color on hover */
-    background-color:rgb(255, 113, 219);
-    
 }
-
-.Register .Reg {
-    color:hsl(257, 40%, 49%);
-    transition: color 0.3s; /* Smooth transition for color change */
-  }
-
-  .Register p.Reg:hover {
-    color: white; /* Text color on hover */
-  }
-
-
 
 
 
 .first-logo{
-    margin-left: 12rem;
+    margin-left: 10rem;
+    display: inline-block;
 }
 
 
@@ -62,6 +59,9 @@ body{
 
 .About p{
     color: white;
+    font-family: Open sans-serif;
+    font-size: 20px;
+
 }
 
 
@@ -76,24 +76,67 @@ body{
 .socials img {
     filter: brightness(0) invert(1);
 }
+.socials img:hover{
+    fill: hsl(300, 69%, 71%);
+    cursor: pointer;
 
-.grid-container h1{
-    color: white;
 }
 
-.Register{
-     background-color: white;
-     width: 180px;
-     height: 40px;
-    /* margin: 50px; */
-    text-align: center;
-    color:hsl(257, 40%, 49%);
-    margin-top: 15px;
-    padding: 10px ;
-    border-radius: 67px 67px 67px 67px;
-    font-size: 20px ;
-}
+
+
 
 .attribution{
     text-align: center;
 }
+
+
+
+
+
+
+
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+    .grid-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    .first-logo{
+        display: inline-block;
+        /* place-self: ; */
+        /* margin: left 3px; */
+        
+    }
+
+    .socials img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+
+.illustration-icon img {
+    width: 23rem;
+    height: 23rem;
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* align-items: center; */
+}
+
+
+
+
+body {
+    background-image: url('images/bg-mobile.svg/');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Add any other styles specific to mobile view */
+}
+}
+
+
+
