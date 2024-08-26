@@ -15,7 +15,7 @@ body{
     /* padding-left: 50px; */
      /* margin-right: 50px;   */
     margin-top: 1rem;
-    /* padding: 20,0; */
+    margin: 20,0;
 }
 
 .grid-container h1{
@@ -30,9 +30,9 @@ body{
     border: none;
     color: hsl(257, 40%, 49%); /* Text color */
     padding: 10px 20px;
-    text-align: center;
+    /* text-align: center; */
     text-decoration: none;
-    display: inline-block;
+
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
@@ -48,8 +48,9 @@ body{
 
 
 .first-logo{
-    margin-left: 10rem;
-    display: inline-block;
+    margin-left: 11rem;
+    /* display: inline-block; */
+    margin-bottom: 3rem;
 }
 
 
@@ -60,7 +61,7 @@ body{
 .About p{
     color: white;
     font-family: Open sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
@@ -75,15 +76,14 @@ body{
 }
 .socials img {
     filter: brightness(0) invert(1);
-}
-.socials img:hover{
-    fill: hsl(300, 69%, 71%);
-    cursor: pointer;
-
+    /* transition: filter 0.3s ease; */
+     /* mix-blend-mode: multiply; */
 }
 
-
-
+.socials img:hover {
+     cursor: pointer;  /*Set cursor to hand pointer on hover*/ 
+     /* background-color: hsl(300, 80%, 43%); */
+       }  
 
 .attribution{
     text-align: center;
@@ -106,15 +106,20 @@ body{
 
 
     .first-logo{
-        display: inline-block;
-        /* place-self: ; */
-        /* margin: left 3px; */
+        display: flex;
+        /* place-self:flex-start, flex-start; */
+        /* margin-right: 100rem; */
+        /* align-content: first baseline; */
+        /* float: left; */
         
     }
-
+.illustration-icon .mockups{
+    height: 35vh;
+    width: 100%;
+}
     .socials img{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
        
     }
@@ -129,7 +134,8 @@ body{
 
 
 
-
+/* Media queries */
+@media screen and (max-width: 300px) {
 body {
     background-image: url('images/bg-mobile.svg/');
     background-size: cover;
@@ -137,6 +143,6 @@ body {
     /* Add any other styles specific to mobile view */
 }
 }
-
+}
 
 
